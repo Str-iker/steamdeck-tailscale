@@ -10,7 +10,7 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=true
-Exec=gnome-terminal -x /tmp/tailscale/tailscaled -tun userspace-networking -socket /tmp/tailscaled.sock
+Exec=konsole -e /tmp/tailscale/tailscaled -tun userspace-networking -socket /tmp/tailscaled.sock
 Name=Tailscale Service
 EOF
 
@@ -20,6 +20,6 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=true
-Exec=gnome-terminal -x /tmp/tailscale/tailscale -socket /tmp/tailscaled.sock up
+Exec=konsole -e /tmp/tailscale/tailscale -socket /tmp/tailscaled.sock up
 Name=Tailscale Client
 EOF
