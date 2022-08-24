@@ -8,6 +8,8 @@ Probably want to do this in Desktop MODE then use Game mode after adding the sho
 
 Anyway, the idea is to curl this bash script from your terminal, it will download latest Tailscale and set it up in /tmp/.
 
+Open a terminal and run curl -s https://raw.githubusercontent.com/Str-iker/steamdeck-tailscale/main/steamdeckts.bash | bash
+
 You will need a web browser installed and probably curl, i am assuming it doesnt ship with the deck.
 
 YOU will need to add the 2 desktop files to steam via the "Add a Non-Steam game option" path is under /tmp/

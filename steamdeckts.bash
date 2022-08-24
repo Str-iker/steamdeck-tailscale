@@ -1,8 +1,8 @@
 #!/bin/bash
 ts=tailscale_1.28.0_amd64
-curl -O https://pkgs.tailscale.com/stable/$ts.tgz
-tar xf $ts.tgz
-mv $ts /tmp/tailscale
+curl https://pkgs.tailscale.com/stable/$ts.tgz > /tmp/tailscale.tgz
+tar xf /tmp/tailscale.tgz -C /tmp/
+mv /tmp/$ts /tmp/tailscale
 
 tee << EOF >> /tmp/tailscale-service.desktop
 [Desktop Entry]
