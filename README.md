@@ -15,3 +15,6 @@ You will need a web browser installed and probably curl, i am assuming it doesnt
 YOU will need to add the 2 desktop files to steam via the "Add a Non-Steam game option" path is under /tmp/
 
 First run the tailscale-service file then run the tailscale-client file. In the terminal launched the client, open the link in your browser on the Deck to sign in to Tailscale and authorize.
+
+
+Note: This won't survive a reboot, using /tmp/ for now since that likely will be writeable....I am guessing
