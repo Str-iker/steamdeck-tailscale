@@ -16,6 +16,6 @@ YOU will need to add the 2 desktop files to steam via the "Add a Non-Steam game 
 
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/Pj0RTtn/non-steam-tmp.png" alt="non-steam-tmp" border="0"></a>
 
-After adding both .desktop files to steam, first run the tailscale-service fil. Then run the tailscale-client file. Upon first launch in the terminal launched by the client shortcut, open the link in your browser on the Deck to sign in to Tailscale and authorize.
+After adding both .desktop files to steam, first run the tailscale-service (in steam). Then run the tailscale-client (in steam). Upon first launch in the terminal launched by the client shortcut, open the link in your browser on the Deck to sign in to Tailscale and authorize.
 
 Note: This won't survive a reboot, using /tmp/ for now since that likely will be writeable....I am guessing
