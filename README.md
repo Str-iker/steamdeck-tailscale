@@ -22,7 +22,9 @@ Alternate (tested and working):
 
 Instead of using the desktop file shortcuts in steam, instead open 2 Konsoles and execute the following
 Konsole 1
+
 sudo ~/tailscale/tailscaled -socket /tmp/tailscaled.sock
 
 Konsole 2
+
 sudo ~/tailscale/tailscale -socket /tmp/tailscaled.sock up --operator=$USER
