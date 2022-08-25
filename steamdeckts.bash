@@ -19,6 +19,6 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=true
-Exec=konsole -e sudo ~/tailscale/tailscale -socket /tmp/tailscaled.sock up
+Exec=konsole -e sudo ~/tailscale/tailscale -socket /tmp/tailscaled.sock up --operator=$USER
 Name=Tailscale Client
 EOF
