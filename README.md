@@ -21,6 +21,7 @@ After adding both .desktop files to steam, first run the tailscale-service (in s
 Alternate (tested and working):
 
 Instead of using the desktop file shortcuts in steam, instead open 2 Konsoles and execute the following
+
 Konsole 1
 
 sudo ~/tailscale/tailscaled -socket /tmp/tailscaled.sock
