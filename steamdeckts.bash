@@ -10,7 +10,7 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=true
-Exec=konsole -e ~/tailscale/tailscaled -tun userspace-networking -socket /tmp/tailscaled.sock
+Exec=konsole -e sudo ~/tailscale/tailscaled -socket /tmp/tailscaled.sock
 EOF
 
 tee << EOF >> ~/tailscale/tailscale-client.desktop
@@ -19,6 +19,6 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=true
-Exec=konsole -e ~/tailscale/tailscale -socket /tmp/tailscaled.sock up
+Exec=konsole -e sudo ~/tailscale/tailscale -socket /tmp/tailscaled.sock up
 Name=Tailscale Client
 EOF
