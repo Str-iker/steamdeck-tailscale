@@ -4,21 +4,32 @@ curl https://pkgs.tailscale.com/stable/$ts.tgz > /tmp/tailscale.tgz
 tar xf /tmp/tailscale.tgz -C /tmp/
 mv /tmp/$ts ~/tailscale
 
-tee << EOF >> ~/tailscale/tailscale-service.desktop
+tee << EOF >> ~/Desktop/tailscale-service.desktop
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=true
 Exec=konsole -e sudo ~/tailscale/tailscaled -socket /tmp/tailscaled.sock
+Name=Tailscale Service
 EOF
 
-tee << EOF >> ~/tailscale/tailscale-client.desktop
+tee << EOF >> ~/Desktop/tailscale-client.desktop
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=true
 Exec=konsole -e sudo ~/tailscale/tailscale -socket /tmp/tailscaled.sock up --operator=$USER
-Name=Tailscale Client
+Name=Tailscale Client UP
+EOF
+
+tee << EOF >> ~/Desktop/tailscale-client-down.desktop
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=true
+Exec=konsole -e sudo ~/tailscale/tailscale -socket /tmp/tailscaled.sock up --operator=$USER
+Name=Tailscale Client Down
 EOF
