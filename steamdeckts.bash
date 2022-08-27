@@ -9,7 +9,6 @@ tee << EOF >> ~/Desktop/tailscale-service.desktop
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Terminal=true
 Exec=konsole -e sudo ~/tailscale/tailscaled -socket ~/tailscale/tailscaled.sock
 Name=Tailscale Service
 EOF
@@ -19,7 +18,6 @@ tee << EOF >> ~/Desktop/tailscale-client.desktop
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Terminal=true
 Exec=konsole -e sudo ~/tailscale/tailscale -socket ~/tailscale/tailscaled.sock up --operator=$USER
 Name=Tailscale Client UP
 EOF
@@ -29,7 +27,15 @@ tee << EOF >> ~/Desktop/tailscale-client-down.desktop
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Terminal=true
 Exec=konsole -e sudo ~/tailscale/tailscale -socket ~/tailscale/tailscaled.sock down --operator=$USER
 Name=Tailscale Client Down
+EOF
+
+tee << EOF >> ~/Desktop/tailscale-client-status.desktop
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=konsole -e sudo ~/tailscale/tailscale -socket ~/tailscale/tailscaled.sock status --operator=$USER
+Name=Tailscale Client Status
 EOF
