@@ -3,5 +3,5 @@ Encoding=UTF-8
 Version=1.0
 Type=Application
 Terminal=true
-Exec=curl https://raw.githubusercontent.com/Str-iker/steamdeck-tailscale/main/steamdeckts.bash | bash -s
+Exec=curl https://raw.githubusercontent.com/Str-iker/steamdeck-tailscale/main/steamdeckts.bash | bash
 Name=Tailscale Installer
