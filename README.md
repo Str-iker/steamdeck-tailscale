@@ -19,7 +19,7 @@ passwd
 
   2. Launch the installer
 
-    <a href="https://ibb.co/1RmyL49"><img src="https://i.ibb.co/SV3YPZK/Screenshot-20220827-015756.png" alt="Screenshot-20220827-015756" border="0"></a>
+  <a href="https://ibb.co/1RmyL49"><img src="https://i.ibb.co/SV3YPZK/Screenshot-20220827-015756.png" alt="Screenshot-20220827-015756" border="0"></a>
 
   3. Execute Tailscale Service on your desktop and minimize the window
 
