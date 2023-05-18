@@ -1,5 +1,5 @@
 #!/bin/bash
-ts=tailscale_1.28.0_amd64
+ts=$(curl --silent https://pkgs.tailscale.com/stable/ | grep amd64.tgz | awk '{print $3}' | sed 's/.*">//g;s/<.*//g')
 curl https://pkgs.tailscale.com/stable/$ts.tgz > /tmp/tailscale.tgz
 tar xf /tmp/tailscale.tgz -C /tmp/
 mv /tmp/$ts ~/tailscale
