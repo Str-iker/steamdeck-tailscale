@@ -1,8 +1,8 @@
 #!/bin/bash
 ts=$(curl --silent https://pkgs.tailscale.com/stable/ | grep amd64.tgz | awk '{print $3}' | sed 's/.*">//g;s/<.*//g')
 curl https://pkgs.tailscale.com/stable/$ts -o /tmp/tailscale.tgz
-tar xf /tmp/tailscale.tgz -C /tmp/
-mv /tmp/tailscale ~/tailscale
+echo "Downloading $ts"
+tar xfz /tmp/tailscale.tgz -C /tmp/ && mv /tmp/tailscale*amd64/ ~/tailscale
 
 tee << EOF >> ~/Desktop/tailscale-service.desktop
 [Desktop Entry]
