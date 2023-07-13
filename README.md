@@ -25,9 +25,7 @@ passwd
 
   4. Execute Tailscale Client UP on your desktop. Upon first run you will be shown a link, copy and paste it into your web browser and authenticate to tailscale. The window will automatically close after.
 
-  5. When you want to disconnect tailscale execute the Tailscale Client Down.
-
-  6. To kill the service completely, close the service Terminal window
+  5. To kill the service completely, close the service Terminal window
 
 ## Things to Know
 To get a list of node IPs and their status, execute the Tailscale Client Status icon.
