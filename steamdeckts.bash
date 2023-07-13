@@ -22,20 +22,11 @@ Exec=konsole -e sudo ~/tailscale/tailscale -socket ~/tailscale/tailscaled.sock u
 Name=Tailscale Client UP
 EOF
 
-tee << EOF >> ~/Desktop/tailscale-client-down.desktop
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Type=Application
-Exec=konsole -e sudo ~/tailscale/tailscale -socket ~/tailscale/tailscaled.sock down --operator=$USER
-Name=Tailscale Client Down
-EOF
-
 tee << EOF >> ~/Desktop/tailscale-client-status.desktop
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Exec=konsole -e sudo ~/tailscale/tailscale -socket ~/tailscale/tailscaled.sock status --operator=$USER
+Exec=konsole --hold -e sudo ~/tailscale/tailscale -socket ~/tailscale/tailscaled.sock status
 Name=Tailscale Client Status
 EOF

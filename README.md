@@ -30,9 +30,9 @@ passwd
   6. To kill the service completely, close the service Terminal window
 
 ## Things to Know
-The Magic DNS functionality will not work when running tailscale like this, you will be able to reference nodes via tailscale directly by IP only.
+To get a list of node IPs and their status, execute the Tailscale Client Status icon.
 
-To get a list of node IPs and their status, execute the Tailscale Client Status icon
+To update the version of tailscale, re-execute the installer
 
 Game streaming does work without having to do anything extra. This has been tested.
 ## Extras
