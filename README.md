@@ -34,7 +34,6 @@ To get a list of node IPs and their status, execute the Tailscale Client Status 
 
 To update the version of tailscale, re-execute the installer
 
-Game streaming does work without having to do anything extra. This has been tested.
 ## Extras
 If you wish you can control Tailscale via the CLI by using the binaries under ~/tailscale/  
 you will have to specify the custom sock path ~/tailscale/tailscaled.sock
