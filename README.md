@@ -15,7 +15,7 @@ passwd
 
 ## Installation
 
-  1. [Download the installer](https://raw.githubusercontent.com/Str-iker/steamdeck-tailscale/main/install-tailscale.desktop)
+  1. [Download the installer](https://raw.githubusercontent.com/Str-iker/steamdeck-tailscale/main/install-tailscale)
 
   2. Launch the installer
 
