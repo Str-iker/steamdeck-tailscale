@@ -18,7 +18,7 @@ tee << EOF >> ~/Desktop/tailscale-client.desktop
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Exec=konsole -e sudo ~/tailscale/tailscale -socket ~/tailscale/tailscaled.sock up --operator=$USER
+Exec=konsole -e sudo ~/tailscale/tailscale -socket ~/tailscale/tailscaled.sock up --qr --operator=$USER
 Name=Tailscale Client UP
 EOF
 
